@@ -13,30 +13,38 @@ We placed 12th on the [Aicrowd leaderboard](https://www.aicrowd.com/challenges/e
   <summary>Click to show / hide</summary>
 <br>
   
-All the notebooks included were run using google colab, we thus recommend google colab for their execution. Should a local alternative be desirable, however the following versions of libraries, along with a version of python of 3.6.9 (the one present on google colab) are required:
+All the notebooks included were run using google colab, we thus recommend google colab for their execution. Should a local alternative be desirable, however the following imports, along with a version of python of 3.6.9 (the one present on google colab) are required:
 
 ```
-imgaug==0.2.9
-tensorflow==2.3.0
-tensorflow-addons==0.8.3
-tensorflow-datasets==4.0.1
-tensorflow-estimator==2.3.0
-tensorflow-gcs-config==2.3.0
-tensorflow-hub==0.10.0
-tensorflow-metadata==0.25.0
-tensorflow-privacy==0.2.2
-tensorflow-probability==0.11.0
-Keras==2.4.3
-matplotlib==3.2.2
-seaborn==0.11.0
-numpy==1.18.5
-sklearn==0.22.2.post1
-tqdm==4.41.1
+%matplotlib inline
+import matplotlib.image as mpimg
+import numpy as np
+import matplotlib.pyplot as plt
+import os,sys
+from PIL import Image
+import math
+from sklearn.model_selection import KFold
+import torch
+import torch.autograd as autograd
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.optim as optim
+from torch.autograd import Variable
+from torch.utils.data import Dataset
+from torch.utils.data import TensorDataset, DataLoader
+from torchvision.io import read_image
+from torchvision import transforms as transforms
+import albumentations.augmentations.transforms as tf
+from torchvision.transforms import Compose
+import albumentations as A
+import torchvision.transforms.functional as TF
+from einops import rearrange, reduce
+import pytorch_lightning as pl
+import random, tqdm
+import seaborn as sns
+import warnings
 ```
 
-Further, we cannot guarantee that any GPU can execute the same training as on colab, which contains a 16 GB GPU. Locally training a level 7 U-Net was an impossibility for us, as we ended up having OutOfMemory errors on local GPUs.
-
-In order to run the run.py script, you will also need the wget library.
 
 </details>
 
