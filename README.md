@@ -75,7 +75,7 @@ Here is a description of everything in our Code Folder :
   <summary>Click to show / hide</summary>
 <br>
   
-### The run.ipynb file
+### The run.py file
 
 The `run.py` file performs the following steps :
 
@@ -85,6 +85,8 @@ The `run.py` file performs the following steps :
 
 It must be run with GPUs and might not work and might not work with GPUs that have a lower amount of memory than the ones on *Google Colab*.
 It is also possible to train a model using the same parameters as our best model thanks to the `pretrained.ipynb` file, instead of downloading the best model, but it takes lots of hours to run it on ***Google Colab***.
+
+Note that if you want to run it directly on *Google Colab*, you can use the running.ipynb file on our drive for that.
   
 ### The nn.ipynb file
   
@@ -100,6 +102,10 @@ The `pretrained.ipynb` file is the one that allow us to train the *DeepLabV3Plus
 You can change the different transformations parameters by commenting them or not in the class *RoadsDataset*. Moreover, the number of epochs can be changed in the paragraph where we define the model.
   
 This must be run on Google Colab on our drive to have access to the dataset, to the images of the test set and also to the different trained model to the                     submission.
+
+### The running.ipynb file
+
+The `running.ipynb` file allow you to run directcly the run.py file on *Google Colab*
 
 ### The Experiments Notebook
 
