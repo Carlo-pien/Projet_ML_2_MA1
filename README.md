@@ -105,11 +105,11 @@ The `Experiments.ipynb` notebook contains tests to define which transformations 
   
 #### Unet_model.py
 
-This file contains a first version of our Unet neural network without using the *Lightning* library. Thus, this ones is too slow to run and we didn't use it for our experimentations.
+The Unet_model.py` file contains a first version of our Unet neural network without using the *Lightning* library. Thus, this ones is too slow to run and we didn't use it for our experimentations.
   
 #### Unet_model_lightning.py
 
-This file contains the second version of our Unet neural network using the *Lightning* library. 
+The Unet_model_lightning.py` file contains the second version of our Unet neural network using the *Lightning* library. 
 
 This model is the one we used for all our predictions made with a Unet.
 
