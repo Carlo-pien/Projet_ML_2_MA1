@@ -59,6 +59,7 @@ In order to run all our experiments with good GPUs, we chose to use the Google C
 
 Here is a description of everything in our Code Folder :
 - pretrained_models : It contains the different pretrained model we made during all this project.
+- trained_models : It contains the different trained model we create for the validation of the transformations.
 - test_set_images : The folder of test images
 - for_submission : Contains the different masks of our predictions. It need to be clean up everytime you want to make a new submission.
 - ipynb files : All notebooks are described later
