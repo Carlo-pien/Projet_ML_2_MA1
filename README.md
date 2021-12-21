@@ -56,7 +56,7 @@ import warnings
 
 In order to run all our experiments with good GPUs, we chose to use the Google Colab platform, thus, all our notebooks are hosted there. We also copied them to the github classroom for completeness (looking at code / outputs without running cells), but, since they all make use of google colab and google drive, to run them like we do, you need to follow these steps :
 
-- Access this link that points to our Code Folder, named "Project-KLM" : https://drive.google.com/drive/folders/1FRLOodcV3puuPByXnAm0RzkGfGru2-EY?usp=sharing
+- Access this link that points to our Code Folder, named "Project_ML" : https://drive.google.com/drive/folders/1BdVy8AukS7MS5bqCxJuJMF2N-cUwKluq?usp=sharing
 - Add a shortcut to the Code Folder inside your root drive (Right-click on the folder, add a shortcut inside Drive), without changing the name
 - When running a notebook, make sure that the Drive mount folder shows our code folder inside /content/gdrive/MyDrive, otherwise, the shortcut either has the wrong name, or is at the wrong location
 - Sometimes colab allocates you worse GPUs than necessary, so you may need to reconnect to another machine if you try to train a model and get an OutOfMemory error when allocating Tensors.
