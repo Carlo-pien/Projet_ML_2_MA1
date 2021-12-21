@@ -58,17 +58,12 @@ In order to run all our experiments with good GPUs, we chose to use the Google C
 - Sometimes colab allocates you worse GPUs than necessary, so you may need to reconnect to another machine if you try to train a model and get an OutOfMemory error when allocating Tensors.
 
 Here is a description of everything in our Code Folder :
-- archive : We kept most previous versions of our notebooks for completeness in this folder
-- libs : All python libraries are kept under this folder (even those provided)
-- models : All pretrained weights and models are in this folder
-- submissions : We kept csv files for all important submissions in this folder.
-- test_predictions : We kept image predictions for all important submissions in this folder
+- pretrained_models : It contains the different pretrained model we made during all this project.
 - test_set_images : The folder of test images
-- training : The folder of training images
-- validation_predictions : The image predictions that are done on our validation sets in our Experiments notebook are kept here.
-- vis_postprocessing : Figures appearing in the report relating to postprocessing.
+- for_submission : Contains the different masks of our predictions. It need to be clean up everytime you want to make a new submission.
 - ipynb files : All notebooks are described later
-- run.py file: Same as the run.py in the github classroom folder, here for ease of use of the Running.ipynb notebook
+- models : It contains the different py files for our Unet.
+- submission files : It contains different csv files for our submissions on *AIcrowd*
 
 </details>
 
