@@ -58,6 +58,7 @@ In order to run all our experiments with good GPUs, we chose to use the Google C
 - Sometimes colab allocates you worse GPUs than necessary, so you may need to reconnect to another machine if you try to train a model and get an OutOfMemory error when allocating Tensors.
 
 Here is a description of everything in our Code Folder :
+- run.py : It contains the necessary code to reproduce the csv file of our best submission on *AIcrowd*
 - pretrained_models : It contains the different pretrained model we made during all this project.
 - trained_models : It contains the different trained model we create for the validation of the transformations.
 - test_set_images : The folder of test images
@@ -76,7 +77,7 @@ Here is a description of everything in our Code Folder :
   
 ### The run.ipynb file
 
-The `run.ipynb` file performs the following steps :
+The `run.py` file performs the following steps :
 
 - Downloading our best model in the drive (i.e. 500 training epochs using all transformations for the data augmentation)
 - Predicting the test images
