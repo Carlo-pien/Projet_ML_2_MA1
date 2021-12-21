@@ -86,7 +86,7 @@ The `run.py` file performs the following steps :
 It must be run with GPUs and might not work and might not work with GPUs that have a lower amount of memory than the ones on *Google Colab*.
 It is also possible to train a model using the same parameters as our best model thanks to the `pretrained.ipynb` file, instead of downloading the best model, but it takes lots of hours to run it on ***Google Colab***.
 
-Note that if you want to run it directly on *Google Colab*, you can use the `running.ipynb file on our drive for that.
+Note that if you want to run it directly on *Google Colab*, you can use the `running.ipynb` file on our drive for that.
   
 ### The nn.ipynb file
   
