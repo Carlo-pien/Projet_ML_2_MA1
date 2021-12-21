@@ -109,7 +109,7 @@ The `running.ipynb` file allow you to run directcly the run.py file on *Google C
 
 ### The Experiments Notebook
 
-The `Experiments.ipynb` notebook contains tests to define which transformations are useful for use in our Unet model.
+The `Experiments.ipynb` notebook contains differnet tests to define which transformations are useful and allow to perform better predictions with our Unet model.
   
 #### Unet_model.py
 
