@@ -1,6 +1,6 @@
-# EPFL Road Segmentation 2020
+# Road Segmentation 2020 - CS-433 Machine Learning
 
-This repository contains the code used to create our submission to the 2020 edition of the [EPFL Aicrowd Road Segmentation challenge](https://www.aicrowd.com/challenges/epfl-ml-road-segmentation).
+This repository contains the code used to create our submission to the 2021 edition of the [EPFL Aicrowd Road Segmentation challenge](https://www.aicrowd.com/challenges/epfl-ml-road-segmentation).
 
 ## Libraries used and Execution Guide
 
