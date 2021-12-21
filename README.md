@@ -1,10 +1,6 @@
-# EPFL Road Segmentation 2020
+# Road Segmentation 2021 - CS-433 Machine Learning
 
-This repository contains the code used to create our submission to the 2020 edition of the [EPFL Aicrowd Road Segmentation challenge](https://www.aicrowd.com/challenges/epfl-ml-road-segmentation).
-
-In order to understand better what techniques we used, the best way is to read through the **Experiments.ipynb** notebook, which explains our usage of U-Nets, our selection of Data Augmentation, the Sliding Window technique we used to provide robustness, and different types of post processing methods attempted.
-
-We placed 12th on the [Aicrowd leaderboard](https://www.aicrowd.com/challenges/epfl-ml-road-segmentation/leaderboards?challenge_round_id=695) ! This means that our solution definitely could use improvements, but we are satisfied of it.
+This repository contains the code used to create our submission to the 2021 edition of the [EPFL Aicrowd Road Segmentation challenge](https://www.aicrowd.com/challenges/epfl-ml-road-segmentation).
 
 ## Libraries used and Execution Guide
 
@@ -58,21 +54,17 @@ In order to run all our experiments with good GPUs, we chose to use the Google C
 
 - Access this link that points to our Code Folder, named "Project_ML" : https://drive.google.com/drive/folders/1BdVy8AukS7MS5bqCxJuJMF2N-cUwKluq?usp=sharing
 - Add a shortcut to the Code Folder inside your root drive (Right-click on the folder, add a shortcut inside Drive), without changing the name
-- When running a notebook, make sure that the Drive mount folder shows our code folder inside /content/gdrive/MyDrive, otherwise, the shortcut either has the wrong name, or is at the wrong location
+- When running a notebook, make sure that the Drive mount folder shows our code folder inside /content/drive/MyDrive, otherwise, the shortcut either has the wrong name, or is at the wrong location
 - Sometimes colab allocates you worse GPUs than necessary, so you may need to reconnect to another machine if you try to train a model and get an OutOfMemory error when allocating Tensors.
 
 Here is a description of everything in our Code Folder :
-- archive : We kept most previous versions of our notebooks for completeness in this folder
-- libs : All python libraries are kept under this folder (even those provided)
-- models : All pretrained weights and models are in this folder
-- submissions : We kept csv files for all important submissions in this folder.
-- test_predictions : We kept image predictions for all important submissions in this folder
+- pretrained_models : It contains the different pretrained model we made during all this project.
+- trained_models : It contains the different trained model we create for the validation of the transformations.
 - test_set_images : The folder of test images
-- training : The folder of training images
-- validation_predictions : The image predictions that are done on our validation sets in our Experiments notebook are kept here.
-- vis_postprocessing : Figures appearing in the report relating to postprocessing.
+- for_submission : Contains the different masks of our predictions. It need to be clean up everytime you want to make a new submission.
 - ipynb files : All notebooks are described later
-- run.py file: Same as the run.py in the github classroom folder, here for ease of use of the Running.ipynb notebook
+- models : It contains the different py files for our Unet.
+- submission files : It contains different csv files for our submissions on *AIcrowd*
 
 </details>
 
@@ -110,33 +102,15 @@ This must be run on Google Colab on our drive to have access to the dataset, to 
 
 ### The Experiments Notebook
 
-The `Experiments.ipynb` notebook combines most of our experiments attempted on this project. 
-
-Most cells have to be run on Google Colab or at least using similar/better GPUs (Nvidia K80 at least, but we can't guarantee that they didn't change since), although we don't even necessarily recommend running them, because training models can take multiple hours. Everything is already run, with shown output so that you can look at code and corresponding output.
-
-It is divided into parts which are :
-
-- Selecting Data Augmentation
-- Selecting the level of our U-Net
-- Best Input Size (and sliding window size)
-- Best stride for our sliding window
-- Trying out weighted loss
-- Averaging models
-- Post-Processing methods to use
-
-
-### The file libraries
-
-In order to tidy up code inside the notebooks, we chose to move all shared / boilerplate code inside different python files which we use as libraries (listed under the libs folder).
-
+The `Experiments.ipynb` notebook contains tests to define which transformations are useful for use in our Unet model.
   
 #### Unet_model.py
 
-This file contains a first version of our Unet neural network without using the *Lightning* library. Thus, this ones is too slow to run and we didn't use it for our experimentations.
+The `Unet_model.py` file contains a first version of our Unet neural network without using the *Lightning* library. Thus, this ones is too slow to run and we didn't use it for our experimentations.
   
 #### Unet_model_lightning.py
 
-This file contains the second version of our Unet neural network using the *Lightning* library. 
+The `Unet_model_lightning.py` file contains the second version of our Unet neural network using the *Lightning* library. 
 
 This model is the one we used for all our predictions made with a Unet.
 
