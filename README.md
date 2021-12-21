@@ -2,10 +2,6 @@
 
 This repository contains the code used to create our submission to the 2020 edition of the [EPFL Aicrowd Road Segmentation challenge](https://www.aicrowd.com/challenges/epfl-ml-road-segmentation).
 
-In order to understand better what techniques we used, the best way is to read through the **Experiments.ipynb** notebook, which explains our usage of U-Nets, our selection of Data Augmentation, the Sliding Window technique we used to provide robustness, and different types of post processing methods attempted.
-
-We placed 12th on the [Aicrowd leaderboard](https://www.aicrowd.com/challenges/epfl-ml-road-segmentation/leaderboards?challenge_round_id=695) ! This means that our solution definitely could use improvements, but we are satisfied of it.
-
 ## Libraries used and Execution Guide
 
 
