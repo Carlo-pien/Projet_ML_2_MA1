@@ -101,25 +101,7 @@ This must be run on Google Colab on our drive to have access to the dataset, to 
 
 ### The Experiments Notebook
 
-The `Experiments.ipynb` notebook combines most of our experiments attempted on this project. 
-
-Most cells have to be run on Google Colab or at least using similar/better GPUs (Nvidia K80 at least, but we can't guarantee that they didn't change since), although we don't even necessarily recommend running them, because training models can take multiple hours. Everything is already run, with shown output so that you can look at code and corresponding output.
-
-It is divided into parts which are :
-
-- Selecting Data Augmentation
-- Selecting the level of our U-Net
-- Best Input Size (and sliding window size)
-- Best stride for our sliding window
-- Trying out weighted loss
-- Averaging models
-- Post-Processing methods to use
-
-
-### The file libraries
-
-In order to tidy up code inside the notebooks, we chose to move all shared / boilerplate code inside different python files which we use as libraries (listed under the libs folder).
-
+The `Experiments.ipynb` notebook contains tests to define which transformations are useful for use in our Unet model.
   
 #### Unet_model.py
 
