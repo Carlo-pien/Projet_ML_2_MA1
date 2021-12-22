@@ -78,7 +78,7 @@ Here is a description of everything in our Code Folder :
 
 The `run.py` file performs the following steps :
 
-- Downloading our best model in the drive (i.e. 500 training epochs using all transformations for the data augmentation)
+- Downloading our best model (i.e. 500 training epochs using all transformations for the data augmentation)
 - Predicting the test images
 - Creating a submission file for the AIcrowd platform
 
