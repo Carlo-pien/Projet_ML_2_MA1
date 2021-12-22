@@ -55,14 +55,13 @@ In order to run all our experiments with good GPUs, we chose to use the Google C
 - Access this link that points to our Code Folder, named "Project_ML" : https://drive.google.com/drive/folders/1BdVy8AukS7MS5bqCxJuJMF2N-cUwKluq?usp=sharing
 - Add a shortcut to the Code Folder inside your root drive (Right-click on the folder, add a shortcut inside Drive), without changing the name
 - When running a notebook, make sure that the Drive mount folder shows our code folder inside /content/drive/MyDrive, otherwise, the shortcut either has the wrong name, or is at the wrong location
-- Sometimes colab allocates you worse GPUs than necessary, so you may need to reconnect to another machine if you try to train a model and get an OutOfMemory error when allocating Tensors.
 
 Here is a description of everything in our Code Folder :
 - run.py : It contains the necessary code to reproduce the csv file of our best submission on *AIcrowd*
 - pretrained_models : It contains the different pretrained model we made during all this project.
 - trained_models : It contains the different trained model we create for the validation of the transformations.
 - test_set_images : The folder of test images
-- for_submission : Contains the different masks of our predictions. It need to be clean up everytime you want to make a new submission.
+- for_submission : It contains the different masks of our predictions. It need to be clean up everytime you want to make a new submission.
 - ipynb files : All notebooks are described later
 - models : It contains the different py files for our Unet.
 - submission files : It contains different csv files for our submissions on *AIcrowd*
@@ -109,11 +108,11 @@ The `running.ipynb` file allow you to run directcly the run.py file on *Google C
 
 ### The Experiments Notebook
 
-The `Experiments.ipynb` notebook contains differnet tests to define which transformations are useful and allow to perform better predictions with our Unet model.
+The `Experiments.ipynb` notebook contains different tests to define which transformations are useful and allows to perform better predictions with our Unet model.
   
 #### Unet_model.py
 
-The `Unet_model.py` file contains a first version of our Unet neural network without using the *Lightning* library. Thus, this ones is too slow to run and we didn't use it for our experimentations.
+The `Unet_model.py` file contains a first version of our Unet neural network without using the *Lightning* library. Thus, this ones is too slow to run and we finally didn't use it for our experimentations.
   
 #### Unet_model_lightning.py
 
