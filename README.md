@@ -110,11 +110,11 @@ The `running.ipynb` file allow you to run directcly the run.py file on *Google C
 
 The `Experiments.ipynb` notebook contains different tests to define which transformations are useful and allows to perform better predictions with our Unet model.
   
-#### Unet_model.py
+### Unet_model.py
 
 The `Unet_model.py` file contains a first version of our Unet neural network without using the *Lightning* library. Thus, this ones is too slow to run and we finally didn't use it for our experimentations.
   
-#### Unet_model_lightning.py
+### Unet_model_lightning.py
 
 The `Unet_model_lightning.py` file contains the second version of our Unet neural network using the *Lightning* library. 
 
