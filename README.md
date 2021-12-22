@@ -57,14 +57,14 @@ In order to run all our experiments with good GPUs, we chose to use the Google C
 - When running a notebook, make sure that the Drive mount folder shows our code folder inside /content/drive/MyDrive, otherwise, the shortcut either has the wrong name, or is at the wrong location
 
 Here is a description of everything in our Code Folder :
-- run.py : It contains the necessary code to reproduce the csv file of our best submission on *AIcrowd*
+- run.py : It contains the necessary code to reproduce the csv file of our best submission on *AIcrowd*.
 - pretrained_models : It contains the different pretrained model we made during all this project.
 - trained_models : It contains the different trained model we create for the validation of the transformations.
-- test_set_images : The folder of test images
+- test_set_images : The folder of test images.
 - for_submission : It contains the different masks of our predictions. It need to be clean up everytime you want to make a new submission.
-- ipynb files : All notebooks are described later
-- models : It contains the different py files for our Unet.
-- submission files : It contains different csv files for our submissions on *AIcrowd*
+- ipynb files : All notebooks are described later.
+- Unet_model.py and Unet_model_lightning.py : The content of these files is described below.
+- submission files : It contains different csv files for our submissions on *AIcrowd*.
 
 </details>
 
