@@ -176,7 +176,7 @@ def img_crop(im, w, h):
     return list_patches
 
 #Dowloading the data
-root_dir = "/content/drive/MyDrive/Projet_ML/training/"
+root_dir = "/training/"
 
 n = 100
 image_dir = root_dir + "images/"
@@ -263,7 +263,7 @@ dataloader = DataLoader(dataset, batch_size=16, shuffle=True)
 #loading the test set. Test images are resized to the 400 by 400 format of the training images
 test_aug_downsize = album.RandomSizedCrop(min_max_height=	[608,608], height = 400, width=400, p = 1.)
 
-root_dir_test = "/content/drive/MyDrive/Projet_ML/test_set_images/"
+root_dir_test = "/test_set_images/"
 n_test = 50
 files_test = os.listdir(root_dir_test)
 files_test = [file for file in files_test if file.endswith('.png')]
@@ -279,7 +279,7 @@ for i in range(n_test):
     imgs_test_names.append(img_name)
     
 #reloading the model
-path = os.path.join('/content/drive/MyDrive/Projet_ML/pretrained_models/deeplabv3p_500_epochs.pth')
+path = os.path.join('/pretrained_models/deeplabv3p_500_epochs.pth')
 model = torch.load(path)
 model.eval()
 
@@ -301,7 +301,7 @@ for i, pred in enumerate(preds) :
 
 #Saving the masks in a new directory
 from PIL import Image as im
-path = os.path.join('/content/drive/MyDrive/Projet_ML/for_submission/')
+path = os.path.join('/for_submission/')
 
 for i, mask in enumerate(for_submission):
     name = imgs_test_names[i]
@@ -348,10 +348,10 @@ def masks_to_submission(submission_filename, *image_filenames):
 
 
 def create_submission():
-    submission_filename = '/content/drive/MyDrive/Projet_ML/submission.csv'
+    submission_filename = '/submission.csv'
     image_filenames = []
     for i in range(1, 51):
-        image_filename = '/content/drive/MyDrive/Projet_ML/for_submission/' + '%.2d' % i + '.png'
+        image_filename = '/for_submission/' + '%.2d' % i + '.png'
         image_filenames.append(image_filename)
     masks_to_submission(submission_filename, *image_filenames)
 
