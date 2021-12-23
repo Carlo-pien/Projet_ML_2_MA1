@@ -108,7 +108,7 @@ The `running.ipynb` file allow you to run directcly the run.py file on *Google C
 
 ### The Experiments Notebook
 
-The `Experiments.ipynb` notebook contains different tests to define which transformations are useful and allows to perform better predictions with our Unet model.
+The `Experiments.ipynb` notebook contains different tests to define which transformations are useful and allows to perform better predictions with our Unet model. This notebook must be run on *Google Colab* as it needs to load models that are saved on the Drive.
   
 ### Unet_model.py
 
